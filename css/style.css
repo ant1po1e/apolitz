@@ -79,6 +79,22 @@ section {
     transition: all 0.1s ease 0s;
 }
 
+.btn-send {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: antiquewhite;
+    transform: scale(1.08);
+    transition: all 0.1s ease 0s;
+}
+
 .header {
     background: var(--bg);
     display: flex;
@@ -549,17 +565,10 @@ p {
     transition: all 0.1s ease 0s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.abt {
+    text-shadow: 2px 2px 5px #000000;
+    font-size: xx-large;
+}
 
 /* media queries  */
 @media (max-width:991px) {
