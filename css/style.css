@@ -136,7 +136,7 @@ section {
     color: var(--main-color);
 }
 
-#feature-btn {
+#menu-btn {
     display: none;
 }
 
@@ -570,6 +570,7 @@ p {
     font-size: xx-large;
 }
 
+
 /* media queries  */
 @media (max-width:991px) {
 
@@ -589,7 +590,7 @@ p {
 
 @media (max-width:768px) {
 
-    #feature-btn {
+    #menu-btn {
         display: inline-block;
     }
 
