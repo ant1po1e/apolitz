@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <title>Apolitz</title>
 
     <!-- Font cdn -->
@@ -26,8 +28,8 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#menu">Features</a>
-            <a href="#products">Compatible</a>
+            <a href="#feature">Features</a>
+            <a href="#compatible">Compatible</a>
             <a href="#contact">Contact</a>
         </nav>
         <div class="icons">
@@ -40,7 +42,7 @@
     <section class="home" id="home">
         <div class="content">
             <h3>Apolitz</h3>
-            <p>A free, community-driven and open-source
+            <p style="text-shadow: 2px 2px 5px #000000;">A free, community-driven and open-source
                 VSRG charting tool</p>
             <a href="#" class="btn">Try now!</a>
         </div>
@@ -56,18 +58,19 @@
             </div>
             <div class="content">
                 <h3>What makes this tool special?</h3>
-                <p>In here, you can make a chart or beatmap easily. You can calculate BPM automatically and the
+                <p>With this tool, you can make a chart or beatmap easily. You can calculate BPM automatically and the
                     calculation nearly accurate.
                 </p>
-                <p>You can also convert every type of audio file into the software itself (e.g: .ogg, .mp3).</p>
-                <a href="#" class="btn">learn more</a>
+                <p>You can also convert every type of audio file into the software itself (e.g: .ogg, .mp3). This tool
+                    also has waveform so you can visually see audio pitch through the editor itself.</p>
+                <a href="#" class="btn">Learn More!</a>
             </div>
         </div>
     </section>
     <!-- About-END -->
 
     <!-- Features  -->
-    <section class="menu" id="menu">
+    <section class="menu" id="feature">
         <h1 class="heading"><span>Feau</span>tures</h1>
         <div class="box-container">
             <div class="box ftr">
@@ -95,7 +98,7 @@
     <!-- Features-END -->
 
     <!-- Compatible -->
-    <section class="products" id="products">
+    <section class="compatible" id="compatible">
         <h1 class="heading"><span>Compatible</span> Games</h1>
         <div class="box-container">
             <div class="box">
@@ -167,7 +170,40 @@
     </section>
     <!-- Footer-END -->
 
-    <!-- custom js file link  -->
+    <!-- Bootsrrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <!-- Java Form Script -->
+    <script>
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbx0eCzzKaKtZ2gIwprnJ-5xtkpoM0kqcLv5uoVVUVZZMgIsJ6Fn6YHJ5OzUIOcpIcJV/exec";
+        const form = document.forms["Ant1po1e-contact-form"];
+        const btnSend = document.querySelector(".btn-send");
+        const btnLoading = document.querySelector(".btn-loading");
+        const myAlert = document.querySelector(".alert");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            btnLoading.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
+            fetch(scriptURL, {
+                    method: "POST",
+                    body: new FormData(form),
+                })
+                .then((response) => {
+                    btnLoading.classList.toggle("d-none");
+                    btnSend.classList.toggle("d-none");
+                    myAlert.classList.toggle("d-none");
+                    form.reset();
+                    console.log("Success!", response);
+                })
+                .catch((error) => console.error("Error!", error.message));
+        });
+    </script>
+
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>

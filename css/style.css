@@ -18,6 +18,10 @@
     transition: .2s linear;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -70,7 +74,9 @@ section {
 }
 
 .btn:hover {
-    letter-spacing: .2rem;
+    background-color: antiquewhite;
+    transform: scale(1.08);
+    transition: all 0.1s ease 0s;
 }
 
 .header {
@@ -114,7 +120,7 @@ section {
     color: var(--main-color);
 }
 
-#menu-btn {
+#feature-btn {
     display: none;
 }
 
@@ -269,61 +275,62 @@ section {
     line-height: 1.8;
 }
 
-.menu .box-container {
+.feature .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.menu .box-container .box {
+.feature .box-container .box {
     padding: 5rem;
     text-align: center;
     border: var(--border);
 }
 
-.menu .box-container .box img {
+.feature .box-container .box img {
     height: 10rem;
 }
 
-.menu .box-container .box h3, p {
+.feature .box-container .box h3,
+p {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
 }
 
-.menu .box-container .box .price {
+.feature .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
 
-.menu .box-container .box .price span {
+.feature .box-container .box .price span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
 
-.menu .box-container .box:hover {
+.feature .box-container .box:hover {
     background: #fff;
 }
 
-.menu .box-container .box:hover>* {
+.feature .box-container .box:hover>* {
     color: var(--black);
 }
 
-.products .box-container {
+.compatible .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.products .box-container .box {
+.compatible .box-container .box {
     text-align: center;
     border: var(--border);
     padding: 2rem;
 }
 
-.products .box-container .box .icons a {
+.compatible .box-container .box .icons a {
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -333,38 +340,38 @@ section {
     margin: .3rem;
 }
 
-.products .box-container .box .icons a:hover {
+.compatible .box-container .box .icons a:hover {
     background: var(--main-color);
 }
 
-.products .box-container .box .image {
+.compatible .box-container .box .image {
     padding: 2.5rem 0;
 }
 
-.products .box-container .box .image img {
+.compatible .box-container .box .image img {
     height: 25rem;
 }
 
-.products .box-container .box .content h3 {
+.compatible .box-container .box .content h3 {
     color: #fff;
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .stars {
+.compatible .box-container .box .content .stars {
     padding: 1.5rem;
 }
 
-.products .box-container .box .content .stars i {
+.compatible .box-container .box .content .stars i {
     font-size: 1.7rem;
     color: var(--main-color);
 }
 
-.products .box-container .box .content .price {
+.compatible .box-container .box .content .price {
     color: #fff;
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .price span {
+.compatible .box-container .box .content .price span {
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1.5rem;
@@ -573,7 +580,7 @@ section {
 
 @media (max-width:768px) {
 
-    #menu-btn {
+    #feature-btn {
         display: inline-block;
     }
 
