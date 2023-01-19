@@ -227,7 +227,7 @@ section {
     color: var(--main-color);
 }
 
-.header .cart-items-container .btn {
+.header .cart-items-container .btn .btn-send {
     width: 100%;
     text-align: center;
 }
