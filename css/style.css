@@ -285,7 +285,7 @@ section {
     height: 10rem;
 }
 
-.menu .box-container .box h3 {
+.menu .box-container .box h3, p {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
@@ -368,43 +368,6 @@ section {
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1.5rem;
-}
-
-.review .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.review .box-container .box {
-    border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.review .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #ccc;
-    padding: 2rem 0;
-}
-
-.review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3 {
-    padding: 1rem 0;
-    font-size: 2rem;
-    color: #fff;
-}
-
-.review .box-container .box .stars i {
-    font-size: 1.5rem;
-    color: var(--main-color);
 }
 
 .contact .row {
@@ -562,6 +525,21 @@ section {
 
 .footer .credit span {
     color: var(--main-color);
+}
+
+.cmp:hover {
+    transform: scale(1.08);
+    transition: all 0.1s ease 0s;
+}
+
+.ftr:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease 0s;
+}
+
+#ftr:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease 0s;
 }
 
 
