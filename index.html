@@ -5,177 +5,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Apolitz</title>
-
-    <!-- Font cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <a href="https://apolitz.vercel.app" class="logo">
-            <img src="images/logo.png" alt="">
-        </a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#feature">Features</a>
-            <a href="#compatible">Compatible</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="icons" class="menu-btn">
-            <div class="fas fa-bars" id="menu-btn"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar border-bottom navbar-expand-lg bg-black navbar-dark shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://apolitz.vercel.app"><b>Apolitz</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature"><b>Feature</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#compatible"><b>Compatible</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><b>Contact</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <b>Others</b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="cv.pdf" target="blank"><i
+                                        class="bi bi-file-earmark-person"></i>&nbsp;
+                                    Download CV</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
-    <!-- Header-END -->
+    </nav>
+    <!-- Navber-END -->
+
 
     <!-- Home -->
-    <section class="home" id="home">
-        <div class="content">
-            <h3>Apolitz</h3>
-            <p class="abt">A free, community-driven and open-source
-                VSRG charting tool</p>
-            <a href="#" class="btn">Try now!</a>
+    <section id="home" class="jumbotron text-left pb-5">
+        <div class="container">
+            <h1 class="display-4 pt-5 mt-5"><b>Apolitz</b></h1>
+            <h2 class="display-6 pb-5">A free, community-driven and open-source VSRG charting tool</h2>
+            <button type="button" class="btn btn-try btn-lg">Try now!</button>
         </div>
     </section>
-    <!-- Home-END -->
+    <!--Home-END -->
+
 
     <!-- About -->
-    <section class="about" id="about">
-        <h1 class="heading"> <span>about</span> Apolitz </h1>
-        <div class="row">
-            <div class="image">
-                <img src="images/about-img.jpg" alt="">
+    <section id="about" class="pb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>About <span class="acolor">Apolitz</span></h2>
+                </div>
             </div>
-            <div class="content">
-                <h3>What makes this tool special?</h3>
-                <p>With this tool, you can make a chart or beatmap easily. You can calculate BPM automatically and the
-                    calculation nearly accurate.
-                </p>
-                <p>You can also convert every type of audio file into the software itself (e.g: .ogg, .mp3). This tool
-                    also has waveform so you can visually see audio pitch through the editor itself.</p>
-                <a href="#" class="btn">Learn more!</a>
+            <div class="row fs-5 justify-content-evenly text-left bg-content">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="50">
+                    <img id="abt-img" src="images/about-img.jpg">
+                </div>
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="150">
+                    <p>With this tool, you can make a chart or beatmap easily. You can calculate BPM automatically and
+                        the calculation nearly accurate.</p>
+
+                    <p>You can also convert every type of audio file into the software itself (e.g: .ogg, .mp3). This
+                        tool also has waveform so you can visually see audio pitch through the editor itself.</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- About-END -->
 
-    <!-- Features  -->
-    <section class="feature" id="feature">
-        <h1 class="heading"><span>Fea</span>tures</h1>
-        <div class="box-container">
-            <div class="box ftr">
-                <img id="ftr" src="images/bpmcalc.png" alt="">
-                <h3>BPM Calculator</h3>
-                <p>Calculate Beats per Minute (BPM) Accurately</p>
+
+    <!-- Feature -->
+    <section id="feature" class="pb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-center mb-5 ">
+                <div class="col">
+                    <h2>Fea<span class="acolor">ture</span></h2>
+                </div>
             </div>
-            <div class="box ftr">
-                <img id="ftr" src="images/waveform.png" alt="">
-                <h3>Waveform</h3>
-                <p>See audio pitch directly</p>
-            </div>
-            <div class="box ftr">
-                <img id="ftr" src="images/diffreverence.png" alt="">
-                <h3>Difficulty Reference</h3>
-                <p>Open other difficulty while editing current difficulty</p>
-            </div>
-            <div class="box ftr">
-                <img id="ftr" src="images/timing.png" alt="">
-                <h3>Timing Editor</h3>
-                <p>Edit timings and offset through Timing Editor</p>
+            <div class="row fs-5 justify-content-evenl bg-content">
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="50">
+                        <img id="ftr" src="images/bpmcalc.png" class="card-img-top" alt="Nature">
+                        <div class="card-body">
+                            <h5 class="card-title">BPM Calculator</h5>
+                            <p class="card-text">Calculate Beats per Minute (BPM) Accurately</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="250">
+                        <img id="ftr" src="images/waveform.png" class="card-img-top" alt="Nature">
+                        <div class="card-body">
+                            <h5 class="card-title">Waveform</h5>
+                            <p class="card-text">See audio pitch directly
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="150">
+                        <img id="ftr" src="images/diffreverence.png" class="card-img-top" alt="Nature">
+                        <div class="card-body">
+                            <h5 class="card-title">Difficulty Reference</h5>
+                            <p class="card-text">Open other difficulty while editing current difficulty</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Features-END -->
+    <!-- Feature-END -->
+
 
     <!-- Compatible -->
-    <section class="compatible" id="compatible">
-        <h1 class="heading"><span>Compatible</span> Games</h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                </div>
-                <div class="image cmp">
-                    <a href="https://quavergame.com"><img src="images/quaver.jfif" alt=""></a>
-                </div>
-                <div class="content">
-                    <h3>Quaver</h3>
+    <section id="compatible" class="pb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-center mb-5 ">
+                <div class="col">
+                    <h2>Compatible <span class="acolor">Games</span></h2>
                 </div>
             </div>
-            <div class="box">
-                <div class="image cmp">
-                    <a href="https://etternaonline.com"><img src="images/etterna.jfif" alt=""></a>
+            <div class="row fs-5 justify-content-evenl bg-content">
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="50">
+                        <a href="https://osu.ppy.sh" target="blank"><img id="ftr" src="images/osu!.png"
+                                class="card-img-top" alt="osu"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">osu!</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Etterna</h3>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="150">
+                        <a href="https://quavergame.com" target="blank"><img id="ftr" src="images/quaver.jfif"
+                                class="card-img-top" alt="quaver"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Quaver</h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="image cmp">
-                    <a href="https://osu.ppy.sh"><img src="images/osu!.png" alt=""></a>
-                </div>
-                <div class="content">
-                    <h3>osu!</h3>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-aos="fade-up" data-aos-delay="250">
+                        <a href="https://etternaonline.com" target="blank"><img id="ftr" src="images/etterna.jfif"
+                                class="card-img-top" alt="etterna"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Etterna</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Compatible-END -->
+    <!-- Compatibe-END -->
+
 
     <!-- Contact -->
-    <section class="contact" id="contact">
-        <h1 class="heading"> <span>Contact</span> us </h1>
-        <div class="row">
-            <form action="">
-                <div class="inputBox">
-                    <span class="fas fa-user"></span>
-                    <input type="text" placeholder="Name">
+    <section id="contact" class="pb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>Contact <span class="acolor">Ant1po1e</span></h2>
                 </div>
-                <div class="inputBox">
-                    <span class="fas fa-envelope"></span>
-                    <input type="email" placeholder="Email">
+            </div>
+            <div class="row justify-content-center text-center bg-content">
+                <div class="col-md-6">
+                    <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                        <strong>Thanks!</strong> Your message has been submitted.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <form name="Ant1po1e-contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email1" aria-describedby="email"
+                                name="email" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea class="form-control" id="Message" rows="3" name="message"></textarea>
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-send">Submit</button>
+
+                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </form>
                 </div>
-                <div class="inputBox">
-                    <span class="fas fa-comment"></span>
-                    <input type="text" placeholder="Message">
-                </div>
-                <input type="submit" value="Submit" class="btn-send">
-            </form>
+            </div>
         </div>
     </section>
     <!-- Contact-END -->
 
+
     <!-- Footer -->
-    <section class="footer">
-        <div class="share">
-            <a href="https://twitter.com/4nt1p01e" target="blank" class="fab fa-twitter"></a>
-            <a href="https://www.instagram.com/_ant1po1e/" target="blank" class="fab fa-instagram"></a>
-            <a href="https://www.youtube.com/@ant1po1e" target="blank" class="fab fa-youtube"></a>
-            <a href="https://github.com/ant1po1e" target="blank" class="fab fa-github"></a>
-            <a href="https://www.twitch.tv/ant1po1e" target="blank" class="fab fa-twitch"></a>
-        </div>
-        <div class="credit">
-            <p>Copyright &copy; 2022 <a href="cv.pdf" style="color:white; font-weight:bolder;"
-                    target="blank">Ant1po1e</a></p>
-        </div>
-    </section>
+    <footer class="text-white text-center pb-3 pt-4 border-top">
+        <p class="share">
+            <a class="bi bi-youtube text-light" href="https://www.youtube.com/@ant1po1e" target="blank"></a>&nbsp;&nbsp;
+            <a class="bi bi-twitter text-light" href="https://www.twitter.com/4nt1p01e" target="blank"></a>&nbsp;&nbsp;
+            <a class="bi bi-instagram text-light" href="https://www.instagram.com/_ant1po1e"
+                target="blank"></a>&nbsp;&nbsp;
+            <a class="bi bi-github text-light" href="https://github.com/ant1po1e" target="blank"></a>
+        </p>
+        <p>Copyright &copy; 2022 <a href="https://www.twitter.com/4nt1p01e" class="text-white fw-bold"
+                target="blank">Ant1po1e</a></p>
+    </footer>
     <!-- Footer-END -->
+
 
     <!-- Bootsrrap CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
-    <!-- Java Form Script ->
+
+    <!-- Java Form Script -->
     <script>
         const scriptURL =
             "https://script.google.com/macros/s/AKfycbx0eCzzKaKtZ2gIwprnJ-5xtkpoM0kqcLv5uoVVUVZZMgIsJ6Fn6YHJ5OzUIOcpIcJV/exec";
@@ -203,8 +272,21 @@
         });
     </script>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
 
 </body>
 
