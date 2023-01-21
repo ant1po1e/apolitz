@@ -8,7 +8,8 @@
 }
 
 
-.display-6, .display-4 {
+.display-6,
+.display-4 {
     text-shadow: 5px 2px 5px#000;
 }
 
@@ -89,13 +90,12 @@ section {
 
 
 #abt-img {
-    width:100%
-
+    width: 100%
 }
 
 
 #abt-logo {
-    width:8vh;
+    width: 8vh;
 }
 
 
@@ -117,5 +117,5 @@ footer {
 
 
 #brand {
-    font-weight:500;
+    font-weight: 500;
 }
