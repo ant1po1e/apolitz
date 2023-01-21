@@ -75,11 +75,6 @@ section {
 }
 
 
-#abt-img {
-    max-height: 40vh;
-}
-
-
 .bg-content {
     background-color: #181821;
     padding-top: 3rem;
@@ -92,6 +87,11 @@ section {
     color: #fff;
 }
 
+
+#abt-img {
+    width:100%
+
+}
 
 
 #ftr:hover {
