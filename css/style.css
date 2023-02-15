@@ -20,16 +20,23 @@
 }
 
 
-#feature {
+#member {
     background-color: #000;
     color: rgba(255, 255, 255, 0.9);
 }
 
 
-#compatible {
+#single {
     background-color: #000;
     color: rgba(255, 255, 255, 0.9);
 }
+
+
+#album {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 
 #contact {
     background-color: #000;
@@ -90,7 +97,7 @@ section {
 
 
 #abt-img {
-    width: 100%
+    width: 100%;
 }
 
 
