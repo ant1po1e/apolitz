@@ -10,10 +10,24 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Apolitz</title>
 </head>
 
 <body>
+
+
+    <!-- Loading -->
+    <div class="loader">
+        <div></div>
+    </div>
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
+    <!-- Loading-END -->
 
 
     <!-- Navbar -->
@@ -40,7 +54,7 @@
                         <a class="nav-link" href="#single"><b>Singles</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#album"><b>Singles</b></a>
+                        <a class="nav-link" href="#album"><b>Albums</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact"><b>Contact</b></a>
@@ -133,7 +147,7 @@
                         <img id="ftr" src="images/Masaya.jpg" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Masaya Nakanishi (中西 雅哉)</h5>
-                            <p class="card-text">As: Drummst</p>
+                            <p class="card-text">As: Drummist</p>
                         </div>
                     </div>
                 </div>
