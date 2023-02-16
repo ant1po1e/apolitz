@@ -18,20 +18,17 @@
 
 
     <!-- Loading -->
-    <div class="loader">
-        <div></div>
+    <div class="preloader">
+        <div class="loading">
+            <div role="status">
+                <img id="loader" src="images/load.gif">
+            </div>
+        </div>
     </div>
     <script>
-        $(window).on('load', function () {
-            $(".loader").fadeOut(1000);
-            $(".content").fadeIn(1000);
+        $(document).ready(function () {
+            $(".preloader").fadeOut("slow");
         });
-
-        function noScroll() {
-            window.scrollTo(0, 0);
-        }
-
-        window.addEventListener("load", noScroll);
     </script>
     <!-- Loading-END -->
 
