@@ -26,6 +26,12 @@
             $(".loader").fadeOut(1000);
             $(".content").fadeIn(1000);
         });
+
+        function noScroll() {
+            window.scrollTo(0, 0);
+        }
+
+        window.addEventListener("load", noScroll);
     </script>
     <!-- Loading-END -->
 

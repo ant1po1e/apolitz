@@ -133,6 +133,7 @@ footer {
     width: 100vw;
     overflow: hidden;
     background-color: #16191e;
+    opacity: 0.9;
     position: absolute;
 }
 
