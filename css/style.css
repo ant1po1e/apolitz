@@ -51,7 +51,6 @@ section {
 
 .nav-link {
     position: relative;
-    font-size: 1.1em;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
@@ -68,14 +67,12 @@ section {
     height: 3px;
     background: white;
     border-radius: 5px;
-    transform-origin: right;
     transform: scaleX(0);
     transition: transform .5s;
 }
 
 
 .nav-link:hover::after {
-    transform-origin: left;
     transform: scaleX(1);
 }
 
